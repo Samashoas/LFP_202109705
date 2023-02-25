@@ -213,7 +213,7 @@ def GraficaDatos():
         iteracion += 1
         return f'''\nnodo{iteracion} [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">{pelicula}</td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">{pelicula}</td></tr>
         <tr><td> {anio} </td><td> {genero} </td></tr>
         </table>>];\n\n'''
 
@@ -237,14 +237,11 @@ def GraficaDatos():
         nodo =crear_nodo(peli, anio, genero)
         data += nodo
 
-    # Aqui agregamos el estilo a los nodos de actores
-    data += 'node [shape=Diamond, style=filled, fillcolor="#00c853"]'
-    # Aqui creamos los nodos de actores
+    data += 'node [shape=star, style=filled, fillcolor="crimson"]'
     for actor in listitin:
         nodo = LookActor(actor)
         data += nodo
 
-    # Aqui creamos las relaciones
     for pelicula in MoviesList.MoviesList:
         for actor in pelicula.actor:
             relacion = crear_relacion(iteracion_2,actor)
@@ -253,11 +250,9 @@ def GraficaDatos():
         
     data += '}'
 
-    # Aqui creamos el archivo
     with open('Grafo_Practica1.dot', 'w') as f:
         f.write(data)
 
-    # Aqui creamos la imagen
     os.system('dot -Tpng Grafo_Practica1.dot -o Grafo_Practica1.pdf')
 
     print(Fore.GREEN+'Se regresará al menú principal, ingrese 1 para regresar')

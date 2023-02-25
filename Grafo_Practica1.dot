@@ -7,118 +7,67 @@
     
 nodo1 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Avengers</td></tr>
-        <tr><td> 2012 </td><td> Ficcion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Capitán América: El primer vengador</td></tr>
+        <tr><td> 2011 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo2 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Spiderman</td></tr>
-        <tr><td> 2002 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Capitana Marvel</td></tr>
+        <tr><td> 2019 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo3 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Amazing Spiderman</td></tr>
-        <tr><td> 2012 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Iron Man</td></tr>
+        <tr><td> 2008 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo4 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Amazing Spiderman 2</td></tr>
-        <tr><td> 2014 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Iron Man 2</td></tr>
+        <tr><td> 2011 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo5 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Spiderman Homecoming</td></tr>
-        <tr><td> 2017 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Thor</td></tr>
+        <tr><td> 2011 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo6 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Avengers Infinity War</td></tr>
-        <tr><td> 2018 </td><td> Acion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Los Vengadores</td></tr>
+        <tr><td> 2012 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo7 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Capitán América: El primer vengador</td></tr>
-        <tr><td> 2011 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Thor: El mundo oscuro</td></tr>
+        <tr><td> 2013 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo8 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Capitana Marvel</td></tr>
-        <tr><td> 2019 </td><td> Accion </td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Iron Man 3</td></tr>
+        <tr><td> 2013 </td><td> Accion </td></tr>
         </table>>];
 
 
 nodo9 [label=<
         <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Iron Man</td></tr>
-        <tr><td> 2008 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo10 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Iron Man 2</td></tr>
-        <tr><td> 2011 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo11 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Thor</td></tr>
-        <tr><td> 2011 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo12 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Los Vengadores</td></tr>
-        <tr><td> 2012 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo13 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Thor: El mundo oscuro</td></tr>
-        <tr><td> 2013 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo14 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Iron Man 3</td></tr>
-        <tr><td> 2013 </td><td> Accion </td></tr>
-        </table>>];
-
-
-nodo15 [label=<
-        <table border="0" cellborder="1" cellspacing="0">
-        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Capitán América: El Soldado de Invierno</td></tr>
+        <tr><td bgcolor="peru" port="p1" colspan="2">Capitán América: El Soldado de Invierno</td></tr>
         <tr><td> 2014 </td><td> Accion </td></tr>
         </table>>];
 
-node [shape=Diamond, style=filled, fillcolor="#00c853"]	"Robert Downey Jr"
-	"Chris Evans"
-	"Chris Hemsworth"
-	"Tobey Maguire"
-	"Kirsten Dunst"
-	"Willem Dafoe"
-	"Andrew Garfield"
-	"Emma Stone"
-	"Tom Holland"
-	"Zendaya"
+node [shape=star, style=filled, fillcolor="crimson"]	"Chris Evans"
 	"Tommy Lee Jones"
 	"Hayley Atwell"
 	"Sebastian Stan"
@@ -129,6 +78,7 @@ node [shape=Diamond, style=filled, fillcolor="#00c853"]	"Robert Downey Jr"
 	"Jon Favreau"
 	"Gwyneth Paltrow"
 	"Scarlett Johansson"
+	"Chris Hemsworth"
 	"Natalie Portman"
 	"Tom Hiddleston"
 	"Idris Elba"
@@ -139,64 +89,50 @@ node [shape=Diamond, style=filled, fillcolor="#00c853"]	"Robert Downey Jr"
 	"Christopher Eccleston"
 	"Adrianne Palicki"
 	"Anthony Mackie"
-	nodo1:p1 -> "Robert Downey Jr";
 	nodo1:p1 -> "Chris Evans";
-	nodo1:p1 -> "Chris Hemsworth";
-	nodo2:p1 -> "Tobey Maguire";
-	nodo2:p1 -> "Kirsten Dunst";
-	nodo2:p1 -> "Willem Dafoe";
-	nodo3:p1 -> "Andrew Garfield";
-	nodo3:p1 -> "Emma Stone";
-	nodo4:p1 -> "Andrew Garfield";
-	nodo4:p1 -> "Emma Stone";
-	nodo5:p1 -> "Tom Holland";
-	nodo5:p1 -> "Zendaya";
-	nodo6:p1 -> "Robert Downey Jr";
-	nodo6:p1 -> "Tom Holland";
-	nodo7:p1 -> "Chris Evans";
-	nodo7:p1 -> "Tommy Lee Jones";
-	nodo7:p1 -> "Hayley Atwell";
-	nodo7:p1 -> "Sebastian Stan";
-	nodo7:p1 -> "Stan Lee";
-	nodo8:p1 -> "Brie Larson";
-	nodo8:p1 -> "Samuel L. Jackson";
-	nodo9:p1 -> "Robert Downey Jr.";
-	nodo9:p1 -> "Jon Favreau";
-	nodo9:p1 -> "Gwyneth Paltrow";
+	nodo1:p1 -> "Tommy Lee Jones";
+	nodo1:p1 -> "Hayley Atwell";
+	nodo1:p1 -> "Sebastian Stan";
+	nodo1:p1 -> "Stan Lee";
+	nodo2:p1 -> "Brie Larson";
+	nodo2:p1 -> "Samuel L. Jackson";
+	nodo3:p1 -> "Robert Downey Jr.";
+	nodo3:p1 -> "Jon Favreau";
+	nodo3:p1 -> "Gwyneth Paltrow";
+	nodo3:p1 -> "Stan Lee";
+	nodo4:p1 -> "Robert Downey Jr.";
+	nodo4:p1 -> "Jon Favreau";
+	nodo4:p1 -> "Gwyneth Paltrow";
+	nodo4:p1 -> "Stan Lee";
+	nodo4:p1 -> "Scarlett Johansson";
+	nodo5:p1 -> "Chris Hemsworth";
+	nodo5:p1 -> "Natalie Portman";
+	nodo5:p1 -> "Tom Hiddleston";
+	nodo5:p1 -> "Idris Elba";
+	nodo6:p1 -> "Scarlett Johansson";
+	nodo6:p1 -> "Gwyneth Paltrow";
+	nodo6:p1 -> "Robert Downey Jr.";
+	nodo6:p1 -> "Jeremy Renner";
+	nodo6:p1 -> "Chris Evans";
+	nodo6:p1 -> "Chris Hemsworth";
+	nodo6:p1 -> "Mark Ruffalo";
+	nodo6:p1 -> "Samuel L. Jackson";
+	nodo7:p1 -> "Chris Hemsworth";
+	nodo7:p1 -> "Natalie Portman";
+	nodo7:p1 -> "Tom Hiddleston";
+	nodo7:p1 -> "Anthony Hopkins";
+	nodo7:p1 -> "Idris Elba";
+	nodo7:p1 -> "Stellan Skarsgård";
+	nodo7:p1 -> "Christopher Eccleston";
+	nodo7:p1 -> "Adrianne Palicki";
+	nodo8:p1 -> "Robert Downey Jr.";
+	nodo8:p1 -> "Jon Favreau";
+	nodo8:p1 -> "Gwyneth Paltrow";
+	nodo8:p1 -> "Stan Lee";
+	nodo9:p1 -> "Chris Evans";
+	nodo9:p1 -> "Scarlett Johansson";
+	nodo9:p1 -> "Sebastian Stan";
+	nodo9:p1 -> "Anthony Mackie";
+	nodo9:p1 -> "Samuel L. Jackson";
 	nodo9:p1 -> "Stan Lee";
-	nodo10:p1 -> "Robert Downey Jr.";
-	nodo10:p1 -> "Jon Favreau";
-	nodo10:p1 -> "Gwyneth Paltrow";
-	nodo10:p1 -> "Stan Lee";
-	nodo10:p1 -> "Scarlett Johansson";
-	nodo11:p1 -> "Chris Hemsworth";
-	nodo11:p1 -> "Natalie Portman";
-	nodo11:p1 -> "Tom Hiddleston";
-	nodo11:p1 -> "Idris Elba";
-	nodo12:p1 -> "Scarlett Johansson";
-	nodo12:p1 -> "Gwyneth Paltrow";
-	nodo12:p1 -> "Robert Downey Jr.";
-	nodo12:p1 -> "Jeremy Renner";
-	nodo12:p1 -> "Chris Evans";
-	nodo12:p1 -> "Chris Hemsworth";
-	nodo12:p1 -> "Mark Ruffalo";
-	nodo12:p1 -> "Samuel L. Jackson";
-	nodo13:p1 -> "Chris Hemsworth";
-	nodo13:p1 -> "Natalie Portman";
-	nodo13:p1 -> "Tom Hiddleston";
-	nodo13:p1 -> "Anthony Hopkins";
-	nodo13:p1 -> "Idris Elba";
-	nodo13:p1 -> "Stellan Skarsgård";
-	nodo13:p1 -> "Christopher Eccleston";
-	nodo13:p1 -> "Adrianne Palicki";
-	nodo14:p1 -> "Robert Downey Jr.";
-	nodo14:p1 -> "Jon Favreau";
-	nodo14:p1 -> "Gwyneth Paltrow";
-	nodo14:p1 -> "Stan Lee";
-	nodo15:p1 -> "Chris Evans";
-	nodo15:p1 -> "Scarlett Johansson";
-	nodo15:p1 -> "Sebastian Stan";
-	nodo15:p1 -> "Anthony Mackie";
-	nodo15:p1 -> "Samuel L. Jackson";
-	nodo15:p1 -> "Stan Lee";
 }
