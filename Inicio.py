@@ -1,4 +1,5 @@
 from colorama import Fore
+import os
 import tkinter as tk
 from tkinter import filedialog
 from Procesos import CargaArc, ProcPeliculas
@@ -197,15 +198,73 @@ def FiltradoDatos():
         option = int(input("Seleccione una opción: "))
 
 def GraficaDatos():
-    print(Fore.CYAN + 'se están graficando datos')
-    print(Fore.GREEN+'¿Desea salir de la grafica de datos?')
+    data = '''
+    digraph main {
+        graph [pad="0.5", nodesep="0.5", ranksep="2"];
+        node [shape=plain]
+        rankdir=LR;\n
+    '''
+    global iteracion
+    iteracion = 0
+    iteracion_2 = 1
+
+    def crear_nodo(pelicula, anio, genero):
+        global iteracion
+        iteracion += 1
+        return f'''\nnodo{iteracion} [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">{pelicula}</td></tr>
+        <tr><td> {anio} </td><td> {genero} </td></tr>
+        </table>>];\n\n'''
+
+    def LookActor(actor):
+        return f'\t"{actor}"\n'
+        
+
+    def crear_relacion(nodo,actor):
+        return f'''\tnodo{nodo}:p1 -> "{actor}";\n'''
+
+    listitin = [] 
+    for RecPelis in MoviesList.MoviesList:
+        for RecActor in RecPelis.actor:
+            if RecActor not in listitin:
+                listitin.append(RecActor)
+
+    for pelicula in MoviesList.MoviesList:
+        anio = pelicula.year
+        peli = pelicula.pelicula
+        genero = pelicula.genero
+        nodo =crear_nodo(peli, anio, genero)
+        data += nodo
+
+    # Aqui agregamos el estilo a los nodos de actores
+    data += 'node [shape=Diamond, style=filled, fillcolor="#00c853"]'
+    # Aqui creamos los nodos de actores
+    for actor in listitin:
+        nodo = LookActor(actor)
+        data += nodo
+
+    # Aqui creamos las relaciones
+    for pelicula in MoviesList.MoviesList:
+        for actor in pelicula.actor:
+            relacion = crear_relacion(iteracion_2,actor)
+            data += relacion
+        iteracion_2 += 1
+        
+    data += '}'
+
+    # Aqui creamos el archivo
+    with open('Grafo_Practica1.dot', 'w') as f:
+        f.write(data)
+
+    # Aqui creamos la imagen
+    os.system('dot -Tpng Grafo_Practica1.dot -o Grafo_Practica1.pdf')
+
+    print(Fore.GREEN+'Se regresará al menú principal, ingrese 1 para regresar')
     print('1. Si')
-    print('2. No')
     option = int(input(Fore.GREEN +"Seleccione una opción: "))  
     if option == 1:
         menu()
-    elif option == 2:
-        GestionDatos()
     else:
         print("opcion invalida")
         print()
